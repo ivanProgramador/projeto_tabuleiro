@@ -1,0 +1,4 @@
+O projeto tabuleiro foi finalizado nele form aplicados os conhecimentos de
+Componentização
+Aplicação de estilo css condicional
+      

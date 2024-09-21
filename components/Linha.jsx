@@ -1,19 +1,21 @@
 import Subdivisao from "./Subdivisao";
-import styles from "../styles/linha.module.css";
+import styles from "../styles/Linha.module.css";
 
 export default function Linha(props){
   
    return(
-        <>
-          <Subdivisao preta ></Subdivisao>
-          <Subdivisao></Subdivisao>
-          <Subdivisao preta></Subdivisao>
-          <Subdivisao></Subdivisao>
-          <Subdivisao preta></Subdivisao>
-          <Subdivisao></Subdivisao>
-          <Subdivisao preta></Subdivisao>
+        <div className={styles.linha} >
+           <Subdivisao preta={props.preta}  />
+           <Subdivisao preta={!props.preta}/>
+           <Subdivisao preta={props.preta}/>
+           <Subdivisao preta={!props.preta}/>
+           <Subdivisao preta={props.preta}/>
+           <Subdivisao preta={!props.preta}/>
+           <Subdivisao preta={props.preta}/>
+           <Subdivisao preta={!props.preta}/>
+        </div>         
         
-        </>
+        
    )
 
 }
